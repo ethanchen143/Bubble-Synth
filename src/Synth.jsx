@@ -478,7 +478,7 @@ const Synth = () => {
         <button className='note-button' style={{backgroundColor: '#00A86B'}} onClick={() => setNoteMid(true)}>Mid Note</button>
         <button className='note-button' style={{backgroundColor: '#6C88C4'}} onClick={() => setNoteHigh(true)}>Hi Note</button>
         <div>
-        <label htmlFor='bpm'>Trigger BPM: {bpm/2}</label>
+        <label htmlFor='bpm'>Trigger Rate: {bpm} BPM</label>
         <input type='range' id='bpm' min={20} max={600} step={2} value={bpm} onChange={bpmChange}></input>
       </div>
       <div>
@@ -555,7 +555,7 @@ const Synth = () => {
         <div className='intro'>
           <p>Welcome to Bubble Synth! Generate morphing sounds by clicking on bubbles</p>
           <p>and dropping them on the canvas.</p>
-          <p>Made with React and Tone.js, Created by <a href='https://www.blue-mirror.com'>Ethan Chen</a>💙</p>
+          <p>Made with React and Tone.js, Created by <a href='https://blue-mirror.com'>Ethan Chen</a>💙</p>
         </div>
         <div className='firsthere'>
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
